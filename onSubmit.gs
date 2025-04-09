@@ -69,7 +69,18 @@ function onSubmit(e) {
     htmlTemplate.data["回線"] = row["回線"];
 
 
-
+    /*********************************
+    * 
+    * X投稿文を変更したい時
+    * htmlTemplate.data["x投稿文"] = `文章`;
+    * 
+    *********************************/
+    htmlTemplate.data["x投稿文"] = `${responseMap["絶対に避けたい後悔ポイント"]}な私にぴったりの光回線は${row["回線"]}でした！
+by回線診断ツール
+#回線診断
+#光回線診断
+#診断結果
+URL`;
 
 
     htmlTemplate.data["住まいのエリア（都道府県）"] = responseMap["住まいのエリア（都道府県）"];
